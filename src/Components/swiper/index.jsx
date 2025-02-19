@@ -60,7 +60,7 @@ const MySwiperComponent = () => {
           }}>
           {posts.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="p-[20px] h-[575px] border rounded-[25px] w-[260px] bg-white">
+              <div className="p-[20px] h-[575px]  rounded-[25px] w-[260px] bg-white">
                 <img
                   className="rounded-t-[15px] h-[287.2px]"
                   src={item.image}
@@ -83,7 +83,7 @@ const MySwiperComponent = () => {
                   <p className="text-[20px] font-[700] pb-[10px] text-[#006BFF]">
                     {item.price}00 so'm
                   </p>
-                  <p className="font-[500] pb-[50px]">1 115 900 so'm x 12 oy</p>
+                  <p className="font-[800] mb-[50px] flex items-center  pl-[10px]  h-[40px] border-[2px] rounded-[10px] text-amber-600 border-amber-700">1 115 900 so'm x 12 oy</p>
                 </NavLink>
                 <div className="flex gap-[10px] items-center w-[213px]">
                   <button className="w-[160px] py-[8px] px-[10px] border bg-[#006BFF] text-white rounded-[12px]">
