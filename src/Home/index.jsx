@@ -5,12 +5,10 @@ import Card from "../Components/card";
 
 const Home = () => {
   return (
-    <div>
-    <div className="w-[1300px] m-auto "> 
-        <Navbar/>
-        <Card/>
-        <Footer/>
-    </div>
+    <div className="">
+      <Navbar />
+      <Card />
+      <Footer />
     </div>
   );
 };

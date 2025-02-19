@@ -1,12 +1,11 @@
 import React from "react";
-import { MdNavigateNext } from "react-icons/md";
 import { NavLink } from "react-router";
 
 const FooterTop = () => {
   return (
     <div className="">
       <div className=" ">
-        <ul className="w-[1300px] m-auto flex gap-[10px] px-[16px] border my-[50px] py-[24px] rounded-[35px]  bg-white justify-between ">
+        <ul className="w-[1400px] m-auto flex gap-[10px] px-[16px] border my-[50px] py-[24px] rounded-[35px]  bg-white justify-between ">
           <li className="w-[350px]  ">
             <NavLink className={"flex items-center "}>
               <img

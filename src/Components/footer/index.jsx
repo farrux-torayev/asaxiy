@@ -16,11 +16,9 @@ const Footer = () => {
   return (
     <>
     <div className="">
-
-    
     <FooterTop/>
     <div>
-      <div className="flex w-[1300px] m-auto">
+      <div className="flex w-[1400px] m-auto">
       
         <ul className="px-[15px] w-[318px]">
           <li className="mb-[16px]">

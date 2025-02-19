@@ -9,20 +9,20 @@ const MySwiperComponent = () => {
     <div style={{ maxWidth: '100%', margin: 'auto', padding: '20px' }}>
       <Swiper
        
-        spaceBetween={10} // Slaydlar orasidagi masofa
-        slidesPerView={1} // Bir nechta slaydlar bir vaqtning o'zida ko'rsatiladi
-        loop={true} // Aylanma xususiyatini yoqish
-        pagination={{ clickable: true }} // Paginationni faollashtirish
-        navigation={true} // Navigatsiyani faollashtirish
+        spaceBetween={10} 
+        slidesPerView={1} 
+        loop={true} 
+        pagination={{ clickable: true }} 
+        navigation={true} 
         breakpoints={{
           640: {
-            slidesPerView: 1, // Kichik ekranlarda 1 slayd ko'rsatiladi
+            slidesPerView: 1, 
           },
           768: {
-            slidesPerView: 2, // O'rtacha ekranlarda 2 slayd
+            slidesPerView: 2,
           },
           1024: {
-            slidesPerView: 3, // Katta ekranlarda 3 slayd
+            slidesPerView: 3, 
           },
         }}
       >
