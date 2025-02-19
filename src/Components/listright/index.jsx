@@ -5,7 +5,6 @@ import { IoCartOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { CiUser } from "react-icons/ci";
 import { NavLink } from "react-router";
-import Product from "../../Page/product";
 
 const ListRight = () => {
   return (
@@ -31,7 +30,7 @@ const ListRight = () => {
         </li>
         <li className="flex flex-col justify-center items-center w-[85px] h-[41px]  hover:text-[#006BFF]">
           <IoCartOutline />
-          <NavLink to="/product">Savatcha</NavLink>
+          <NavLink to="/cart">Savatcha</NavLink>
         </li>
         <li className="flex flex-col justify-center items-center w-[85px] h-[41px]  hover:text-[#006BFF]">
           <IoMdHeartEmpty />

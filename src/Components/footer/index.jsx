@@ -18,7 +18,7 @@ const Footer = () => {
     <div className="">
     <FooterTop/>
     <div>
-      <div className="flex w-[1400px] m-auto">
+      <div className="flex w-[1400px] m-auto pt-[40px]">
       
         <ul className="px-[15px] w-[318px]">
           <li className="mb-[16px]">

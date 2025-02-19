@@ -2,7 +2,7 @@ import axios from "axios";
 import { useContext } from "react";
 import { toast } from "react-toastify";
 import { NameContext } from "../Components/context";
-import { Navigate } from "react-router";
+
 
 const Admin = () => {
   const { token } = useContext(NameContext);
@@ -22,9 +22,6 @@ const Admin = () => {
     } catch (err) {
       toast.error(err?.response.data.message);
     }
-  }
-  if (!token) {
-    return <Navigate to={"/login"}/>;
   }
   return (
     <>

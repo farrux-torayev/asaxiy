@@ -4,8 +4,8 @@ import { NavLink } from "react-router";
 const FooterTop = () => {
   return (
     <div className="">
-      <div className=" ">
-        <ul className="w-[1400px] m-auto flex gap-[10px] px-[16px] border my-[50px] py-[24px] rounded-[35px]  bg-white justify-between ">
+      <div className="bg-[#006BFF] py-[15px]  ">
+        <ul className="w-[1400px] m-auto  border flex gap-[10px] px-[16px] my-[50px] py-[24px] rounded-[35px]  bg-white justify-between ">
           <li className="w-[350px]  ">
             <NavLink className={"flex items-center "}>
               <img
