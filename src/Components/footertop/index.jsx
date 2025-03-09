@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 
 const FooterTop = () => {
   return (
-    <div className="">
+    <div className="w-[1520px] m-auto">
       <div className="bg-[#006BFF] py-[15px]  ">
         <ul className="w-[1400px] m-auto  border flex gap-[10px] px-[16px] my-[50px] py-[24px] rounded-[35px]  bg-white justify-between ">
           <li className="w-[350px]  ">
