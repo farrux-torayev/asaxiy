@@ -57,7 +57,8 @@ const MySwiperComponent = () => {
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
             1400: { slidesPerView: 6 },
-          }}>
+          }}
+        >
           {posts.map((item) => (
             <SwiperSlide key={item.id}>
               <div className="p-[20px] h-[575px]  rounded-[25px] w-[260px] bg-white">
@@ -83,7 +84,9 @@ const MySwiperComponent = () => {
                   <p className="text-[20px] font-[700] pb-[10px] text-[#006BFF]">
                     {item.price}00 so'm
                   </p>
-                  <p className="font-[800] mb-[50px] flex items-center  pl-[10px]  h-[40px] border-[2px] rounded-[10px] text-amber-600 border-amber-700">1 115 900 so'm x 12 oy</p>
+                  <p className="font-[800] mb-[50px] flex items-center  pl-[10px]  h-[40px] border-[2px] rounded-[10px] text-amber-600 border-amber-700">
+                    1 115 900 so'm x 12 oy
+                  </p>
                 </NavLink>
                 <div className="flex gap-[10px] items-center w-[213px]">
                   <button className="w-[160px] py-[8px] px-[10px] border bg-[#006BFF] text-white rounded-[12px]">
@@ -91,7 +94,8 @@ const MySwiperComponent = () => {
                   </button>
                   <button
                     onClick={() => handleAddCard(item)}
-                    className="bg-[#00BFAF] flex w-[40px] p-[3px] rounded-[10px] cursor-pointer h-[40px]">
+                    className="bg-[#00BFAF] flex w-[40px] p-[3px] rounded-[10px] cursor-pointer h-[40px]"
+                  >
                     <img
                       className="pl-[1px]"
                       src="./src/assets/icons/cart-single.svg"

@@ -3,9 +3,12 @@ import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router";
 import { toast } from "react-toastify";
 import { NameContext } from "../context";
+import { FaRegEye } from "react-icons/fa";
+import { FaRegEyeSlash } from "react-icons/fa";
 
 const Login = () => {
   const { setToken } = useContext(NameContext);
+  const [showpassword, setShowPassword] = useState();
   const navigate = useNavigate();
   async function handleSubmit(e) {
     e.preventDefault();
@@ -25,6 +28,14 @@ const Login = () => {
       toast.error(err?.response.data.message);
     }
   }
+  function korsat() {
+    if (showpassword) {
+      setShowPassword(false);
+    } else {
+      setShowPassword(true);
+    }
+  }
+
   return (
     <div>
       <form
@@ -41,10 +52,25 @@ const Login = () => {
           className="  bg-white w-[400px] outline-none ml-[25px] p-[8px]"
         />
         <p className="pl-[25px] pt-[30px] pb-[10px]">Parol:</p>
-        <input
-          type="password"
-          className=" bg-white  w-[400px] outline-none ml-[25px] p-[8px]"
-        />{" "}
+
+        <div className="relative">
+          <input
+            type={showpassword ? "text" : "password"}
+            className=" bg-white  w-[400px] outline-none ml-[25px] p-[8px]"
+          />
+          <button
+            type="button"
+            onClick={() => setShowPassword(!showPassword)}
+            className="text-blue-500 text-sm"
+          >
+            {showPassword ? "Yashirish" : "Ko‘rsatish"} (
+            <FaRegEye className="absolute cursor-pointer left-[402px] top-[16px]" />
+            ) : (
+            <FaRegEyeSlash className=" cursor-pointer absolute left-[402px] top-[16px]" />
+            )
+          </button>
+        </div>
+
         <br />
         <button className="w-[125px] m-auto hover:bg-amber-700 rounded-[8px] py-[8px] text-white  mb-[20px] bg-[#E53935]  ">
           Tizimga kirish
